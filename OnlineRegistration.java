@@ -2,10 +2,14 @@ class Course {
     String name;
     int marks;
     int id;
-    Course(String name, int marks,int id) {
+    int courseid;
+    Course(String name, int marks,int id,int courseid) {
         this.name = name;
         this.marks = marks;
-        this.id=id}
+        this.id=id;
+        this.courseid=courseid;
+    
+    }
 }
 class Student {
     String name = "Ravi";
@@ -20,6 +24,8 @@ class Student {
         System.out.println("Student Name: " + name);
         System.out.println("Program: " + program);
         System.out.println("Semester: " + semester);
+                System.out.println("courseid: " + courseid);
+
         System.out.println("Courses Registered:");
         for (Course c : courses) {
             System.out.println("  - " + c.name);
